@@ -8,7 +8,7 @@ class InstructorsController < ApplicationController
     end
 
     def create
-        instructor = Instructor.create!(student_params)
+        instructor = Instructor.create!(instructor_params)
         render json: instructor, status: :created
     end
 
